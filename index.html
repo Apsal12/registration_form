@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation + Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="form">
+            <label>Name*</label>
+            <input type="text" id="name">
+            <small id="nameError"></small>
+            <br>
+            <label>Email*</label>
+            <input type="text" id="email">
+            <small id="emailError"></small>
+            <br>
+            <label>Password*</label>
+            <input type="password" id="password" maxlength="6">
+            <small id="passwordError"></small>
+            <br>
+            <h2>Message Box</h2>
+            <textarea id="message" maxlength="200" placeholder="Type your message..."></textarea>
+
+            <p id="counter">0 / 200 characters</p>
+            <p id="warning"></p>
+
+            <button id="submitBtn" disabled>Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
